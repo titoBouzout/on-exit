@@ -1,0 +1,29 @@
+{
+	"name": "@titodp/on-exit",
+	"version": "3.0.0",
+	"description": "Calls functions before node exits. A node exit handler.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/titoBouzout/on-exit.git"
+	},
+	"keywords": ["exit"],
+	"author": "Tito Bouzout",
+	"bugs": {
+		"url": "https://github.com/titoBouzout/on-exit/issues"
+	},
+	"homepage": "https://github.com/titoBouzout/on-exit#readme",
+	"prettier": {
+		"printWidth": 100,
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true,
+		"jsxSingleQuote": false,
+		"trailingComma": "all",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": false,
+		"arrowParens": "avoid",
+		"quoteProps": "preserve",
+		"proseWrap": "preserve"
+	}
+}
