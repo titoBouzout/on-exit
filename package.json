@@ -1,13 +1,15 @@
 {
 	"name": "@titodp/on-exit",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Calls functions before node exits. A node exit handler.",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/titoBouzout/on-exit.git"
 	},
-	"keywords": ["exit"],
+	"keywords": [
+		"exit"
+	],
 	"author": "Tito Bouzout",
 	"bugs": {
 		"url": "https://github.com/titoBouzout/on-exit/issues"
