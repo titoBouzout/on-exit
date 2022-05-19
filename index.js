@@ -1,3 +1,6 @@
+// Prevents the program from closing instantly
+process.stdin.resume()
+
 let callbacks = []
 module.exports = function (cb) {
 	callbacks.push(cb)
