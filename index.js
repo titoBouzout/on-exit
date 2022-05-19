@@ -1,5 +1,9 @@
-let exiting = false
+let callbacks = []
+module.exports = function (cb) {
+	callbacks.push(cb)
+}
 
+let exiting = false
 function onExit() {
 	if (!exiting) {
 		exiting = true
@@ -7,11 +11,15 @@ function onExit() {
 	}
 }
 
-let callbacks = []
-module.exports = function (cb) {
-	callbacks.push(cb)
-}
-
-for (let m of ['RESTART', 'SIGINT', 'SIGTERM', 'SIGUSR2', 'SIGHUP', 'exit', 'SIGBREAK']) {
+for (let m of [
+	'exit',
+	'RESTART',
+	'SIGBREAK',
+	'SIGHUP',
+	'SIGINT',
+	'SIGTERM',
+	'SIGUSR1',
+	'SIGUSR2',
+]) {
 	process.on(m, onExit)
 }
