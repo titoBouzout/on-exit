@@ -20,6 +20,7 @@ for (let m of [
 	'beforeExit',
 	'shutdown',
 	'exit',
+	'disconnect',
 	'RESTART',
 	'SIGBREAK',
 	'SIGHUP',
