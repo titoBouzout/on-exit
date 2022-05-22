@@ -18,13 +18,14 @@ function onExit() {
 
 for (let m of [
 	'beforeExit',
-	'shutdown',
-	'exit',
 	'disconnect',
+	'exit',
 	'RESTART',
+	'shutdown',
 	'SIGBREAK',
 	'SIGHUP',
 	'SIGINT',
+	'SIGKILL',
 	'SIGTERM',
 	'SIGUSR1',
 	'SIGUSR2',
