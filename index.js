@@ -18,6 +18,7 @@ function onExit() {
 
 for (let m of [
 	'beforeExit',
+	'shutdown',
 	'exit',
 	'RESTART',
 	'SIGBREAK',
