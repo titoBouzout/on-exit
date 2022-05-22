@@ -31,3 +31,5 @@ for (let m of [
 ]) {
 	process.on(m, onExit)
 }
+
+process.on('message', console.log)
