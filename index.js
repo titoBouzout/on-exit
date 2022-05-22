@@ -1,5 +1,5 @@
 let callbacks = []
-module.exports = function (cb) {
+export default function (cb) {
 	callbacks.push(cb)
 }
 
